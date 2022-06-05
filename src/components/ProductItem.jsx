@@ -43,6 +43,7 @@ const Circle = styled.div`
   background-color: #fff;
   position: absolute;
 `;
+
 const Image = styled.img`
   height: 75%;
   z-index: 2;

@@ -1,6 +1,14 @@
 import styled from "styled-components";
-
-import { Facebook, Twitter, Instagram, Pinterest, Room, Phone, MailOutline } from "@material-ui/icons";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Pinterest,
+  Room,
+  Phone,
+  MailOutline,
+} from "@material-ui/icons";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -37,6 +45,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
@@ -59,6 +68,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "#fff8f8" })}
 `;
 
 const ContactItem = styled.div`
@@ -77,10 +87,9 @@ const Footer = () => {
       <Left>
         <Logo>Natkah.</Logo>
         <Desc>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-          neque fuga iste sequi recusandae ducimus voluptatum numquam suscipit
-          maiores voluptate perferendis quae, provident eius, eveniet et nam ea?
-          In, deserunt?
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don’t look even slightly believable.
         </Desc>
         <SocialContainer>
           <SocialIcon color="385999">
@@ -112,9 +121,15 @@ const Footer = () => {
       </Center>
       <Right>
         <Title>Contact</Title>
-        <ContactItem><Room style={{ marginRight: "10px" }} /> Lorem ipsum dolor sit amet</ContactItem>
-        <ContactItem><Phone style={{ marginRight: "10px" }} /> +90 123 456 78 95</ContactItem>
-        <ContactItem><MailOutline style={{ marginRight: "10px" }} /> me@haktantekin.com</ContactItem>
+        <ContactItem>
+          <Room style={{ marginRight: "10px" }} /> Lorem ipsum dolor sit amet
+        </ContactItem>
+        <ContactItem>
+          <Phone style={{ marginRight: "10px" }} /> +90 123 456 78 95
+        </ContactItem>
+        <ContactItem>
+          <MailOutline style={{ marginRight: "10px" }} /> me@haktantekin.com
+        </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>
