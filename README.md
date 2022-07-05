@@ -1,6 +1,6 @@
 ## Demo URL
 
-You can see the [https://haktantekin.com/projects/react-wocommerce/](demo)
+You can see the [demo](https://haktantekin.com/projects/react-wocommerce/)
 
 ## Available Scripts
 
