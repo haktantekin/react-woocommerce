@@ -64,7 +64,7 @@ const MenuItem = styled.div`
   ${mobile({ fontSize: "12px" })}
 `;
 
-function navbar() {
+function Navbar() {
   return (
     <Container>
       <Wrapper>
@@ -90,4 +90,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
